@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Duncan  Garcia · Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <span class="brand-initials">DG</span>
+      </a>
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav gap-1 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+            <button id="darkToggle" class="dark-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+              <i class="bi bi-sun" id="darkIcon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <span class="hero-eyebrow">Portfolio · <span id="heroYear"></span></span>
+          <div class="hero-rule-group">
+            <div class="hero-rule"></div>
+            <div class="hero-name-block">
+              <h1 class="hero-name">Duncan Girauld<br>G. Garcia</h1>
+              <p class="hero-tagline">
+                An Aspiring Graphic Designer &amp; Web Developer
+              </p>
+              <p class="hero-intro">
+                I design and build with the same eye — obsessive about detail,
+                adaptable across any medium.
+              </p>
+              <a href="#contact" class="btn-gold">
+                Get in touch <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-photo-side">
+          <div class="profile-frame">
+            <img
+              src="images/me.jpg"
+              alt="Portrait of Duncan Girauld Garcia"
+              class="profile-img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section-pad reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">About Me</span>
+        <h2 class="section-title">A little background</h2>
+      </div>
+
+      <div class="row g-4 mt-2">
+
+        <div class="col-md-6">
+          <div class="info-card">
+            <div class="info-card-icon">
+              <i class="bi bi-person"></i>
+            </div>
+            <h5>Personal Background</h5>
+            <p>
+              I'm from Cavite, Philippines. I hold my work to a high standard
+              and refuse to settle for good enough. What drives me is the
+              ambition to build something that lasts, whether that's a career,
+              a craft, or a single well-made page.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="info-card">
+            <div class="info-card-icon">
+              <i class="bi bi-mortarboard"></i>
+            </div>
+            <h5>Educational Background</h5>
+            <ul class="plain-list">
+              <!-- REPLACE: Your actual school details -->
+              <li><strong>Polytechnic University of the Philippines — Manila</strong></li>
+              <li>Program: Bachelor of Science in Computer Science</li>
+              <li>2023-2027</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="info-card">
+            <div class="info-card-icon">
+              <i class="bi bi-controller"></i>
+            </div>
+            <h5>Hobbies &amp; Interests</h5>
+            <ul class="plain-list">
+              <li>Playing video games</li>
+              <li>Creating song covers</li>
+              <li>Learning new things</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="info-card">
+            <div class="info-card-icon">
+              <i class="bi bi-geo-alt"></i>
+            </div>
+            <h5>Goals &amp; Ambitions</h5>
+            <ul class="plain-list">
+              <li>Master Figma UI/UX designing &amp; prototyping</li>
+              <li>Build a real client project</li>
+              <li>Become a full-stack developer</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section-pad reveal section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Skills</span>
+        <h2 class="section-title">What I work with</h2>
+      </div>
+
+      <div class="row g-5 mt-2">
+
+        <div class="col-lg-6">
+          <p class="sub-heading">Technical</p>
+
+          <!-- REPLACE: Adjust labels and width percentages to match your actual skill level -->
+          <div class="skill-row">
+            <div class="skill-meta">
+              <span><i class="bi bi-filetype-html me-2"></i>Frontend Development</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" style="width:75%"></div></div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-meta">
+              <span><i class="bi bi-filetype-css me-2"></i>Python</span>
+              <span class="skill-pct">50%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" style="width:50%"></div></div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-meta">
+              <span><i class="bi bi-filetype-js me-2"></i>JavaScript</span>
+              <span class="skill-pct">60%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" style="width:60%"></div></div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-meta">
+              <span><i class="bi bi-bootstrap me-2"></i>C#</span>
+              <span class="skill-pct">30%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" style="width:30%"></div></div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-meta">
+              <span><i class="bi bi-code-slash me-2"></i>SQL</span>
+              <span class="skill-pct">65%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" style="width:65%"></div></div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <p class="sub-heading">Soft Skills</p>
+          <div class="table-responsive">
+            <table class="skills-table">
+              <thead>
+                <tr>
+                  <th>Skill</th>
+                  <th>Level</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><i class="bi bi-chat-dots me-2 text-gold"></i>Communication</td>
+                  <td>Proficient</td>
+                  <td>Verbal &amp; written</td>
+                </tr>
+                <tr>
+                  <td><i class="bi bi-lightbulb me-2 text-gold"></i>Problem Solving</td>
+                  <td>Proficient</td>
+                  <td>Logical thinking</td>
+                </tr>
+                <tr>
+                  <td><i class="bi bi-people me-2 text-gold"></i>Teamwork</td>
+                  <td>Proficient</td>
+                  <td>Group projects</td>
+                </tr>
+                <tr>
+                  <td><i class="bi bi-clock me-2 text-gold"></i>Time Management</td>
+                  <td>Developing</td>
+                  <td>Still improving</td>
+                </tr>
+                <tr>
+                  <td><i class="bi bi-stars me-2 text-gold"></i>Creativity</td>
+                  <td>Proficient</td>
+                  <td>Design &amp; ideation</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section-pad reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Projects</span>
+        <h2 class="section-title">Selected work</h2>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <div class="col-md-4">
+          <div class="project-card">
+            <img src="images/spincycle.jpg" class="project-img"/>
+            <div class="project-info">
+              <div class="project-tag">C# / CSS</div>
+              <h6 class="project-title">SpinCycle Laundry</h6>
+              <p class="project-caption">Group project for the course Application Development.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="project-card">
+            <img src="images/design_cert.jpg" class="project-img"/>
+            <div class="project-info">
+              <div class="project-tag">Certificate</div>
+              <h6 class="project-title">Principles of Design</h6>
+              <p class="project-caption">I have completed a 4-week / 8-hour training course of DICT about the principles of design.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="project-card">
+            <img src="images/web_cert.jpg" class="project-img"/>
+            <div class="project-info">
+              <div class="project-tag">Certificate</div>
+              <h6 class="project-title">Using HTML and CSS to Design a Website</h6>
+              <p class="project-caption">I have completed a 4-week / 8-hour training course of DICT about using HTML and CSS to design a website.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section-pad reveal section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Contact</span>
+        <h2 class="section-title">Let's talk</h2>
+      </div>
+
+      <div class="contact-wrap mt-4">
+        <div class="mb-4">
+          <label for="contactName" class="form-label-custom">
+            <i class="bi bi-person me-2"></i>Name
+          </label>
+          <input type="text" id="contactName" class="form-input" placeholder="Your name" autocomplete="name"/>
+        </div>
+        <div class="mb-4">
+          <label for="contactEmail" class="form-label-custom">
+            <i class="bi bi-envelope me-2"></i>Email Address
+          </label>
+          <input type="email" id="contactEmail" class="form-input" placeholder="you@email.com" autocomplete="email"/>
+        </div>
+        <div class="mb-5">
+          <label for="contactMessage" class="form-label-custom">
+            <i class="bi bi-chat-left-text me-2"></i>Message
+          </label>
+          <textarea id="contactMessage" class="form-input" rows="5" placeholder="Write your message here..."></textarea>
+        </div>
+        <button class="btn-gold" onclick="submitForm()">
+          Send message <i class="bi bi-send ms-2"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-name">
+          Duncan Girauld G. Garcia
+        </p>
+        <p class="footer-copy">
+          © <span id="footerYear"></span> · Built with HTML, CSS &amp; JavaScript
+        </p>
+        <div class="footer-links">
+          <a href="https://github.com/arkzxk" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/duncangirauldgarcia/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="mailto:duncangarcia27@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
